@@ -106,12 +106,14 @@ font-size: 1em;
   position: relative;
   list-style: none;
   margin: auto;
-  width: 50%;
-  top: 40%;
+  width: 70%;
+  top: 20%;
 }
 
 .quiz li{
-border-radius: 10px;
+  border-radius: 10px;
+  height: 70px;
+  margin-top: 40px;
 }
 
 .quiz-question {
@@ -139,8 +141,8 @@ border-radius: 10px;
   content: "";
   display: inline-block;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 70px;
+  height: 70px;
   border: 1px solid #ccc;
   background: #fff;
   vertical-align: middle;
@@ -153,19 +155,21 @@ border-radius: 10px;
 .quiz-answer.active:before {
   background-color: #03A9F4;
   border-color: #03A9F4;
+  border-radius: 50%;
 }
 .quiz-answer.correct:before {
   background-color: green;
   border-color: green;
+  border-radius: 50%;
 }
 .quiz-answer.incorrect:before {
   background-color: red;
   border-color: red;
+  border-radius: 50%;
 }
-.quiz-answer.active.correct:before {
-  outline: 2px solid green;
-  outline-offset: 2px;
-}
+
+/************** quiz result box **************/
+
 .quiz-result {
   margin: 0 auto;
   font-weight: bold;
