@@ -48,18 +48,18 @@ font-size: 1em;
 
 #header-intro p {
   position: absolute;
-  left: 30vw;
-    top: 250px;
-    color: white;
-    text-align: center;
+  left: 10vw;
+  top: 250px;
+  color: white;
+  text-align: center;
   letter-spacing: 2px;
-    width: 400px;
-    border-radius: 4px;
-    background: rgba(204, 204, 204, 0.2);
-    padding: 5px;
+  width: 600px;
+  border-radius: 4px;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 5px;
   font-weight:lighter;
-  line-height: 10px;
-  font-size: 8px;
+  line-height: 30px;
+  font-size: 2em;
   font-family: Raleway, sans-serif;
 }
 
