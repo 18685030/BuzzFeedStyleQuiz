@@ -1,11 +1,7 @@
 body {
   margin: 0;
   padding: 20px;
-}
-
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  background-color: gold;
 }
 
 /************** header tag styles **************/
@@ -50,25 +46,6 @@ font-size: 1em;
  padding: 0px;
 }
 
-
-#header-intro p {
-  position: absolute;
-  left: 10vw;
-  top: 250px;
-  color: white;
-  text-align: center;
-  letter-spacing: 2px;
-  width: 600px;
-  border-radius: 4px;
-  background: rgba(204, 204, 204, 0.2);
-  padding: 5px;
-  font-weight:lighter;
-  line-height: 30px;
-  font-size: 2em;
-  font-family: Raleway, sans-serif;
-}
-
-
 .nav{
   border:1px solid #ccc;
   border-width:1px 0;
@@ -99,8 +76,9 @@ font-size: 1em;
 .questionBox{
   position: relative;
   background-color: grey;
-  width: 100%;
-  height:225px;
+  text-align: center;
+  width: 100vw;
+  height:500px;
   margin: 1px;
 }
 
@@ -110,11 +88,7 @@ font-size: 1em;
   left: 10%;
 }
 
-
-
 .quiz {
-  padding: 0 30px 20px 30px;
-  max-width: 960px;
   margin: 0 auto;
 }
 .quiz ul {
@@ -123,10 +97,9 @@ font-size: 1em;
   margin: 0;
 }
 .quiz li{
-  float: right;
-  clear: right;
+  display: inline-block;
   border-radius: 10px;
-  width:  30%;
+  width:  15%;
   padding: 10px;
   margin: 10px;
 }
@@ -177,7 +150,6 @@ font-size: 1em;
   outline-offset: 2px;
 }
 .quiz-result {
-  max-width: 960px;
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
