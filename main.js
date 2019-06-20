@@ -31,9 +31,6 @@ var Quiz = function() {
   }, {
     question: 9,
     answer: 'Y'
-  }, {
-    question: 10,
-    answer: 'Y'
   },]
 
   this._pickAnswer = function($answer, $answers) {
@@ -80,7 +77,7 @@ var Quiz = function() {
         code: 'good',
         text: 'Between 6 and 8 correct!'
       };
-        } else if (numberOfCorrectAnswers > 9) {
+        } else if (numberOfCorrectAnswers > 8) {
       return {
         code: 'mid',
         text: 'Best student'
@@ -94,7 +91,7 @@ var Quiz = function() {
         answersComplete++;
       }
     });
-    if (answersComplete >= 10) {
+    if (answersComplete >= 9) {
       return true;
     } else {
       return false;

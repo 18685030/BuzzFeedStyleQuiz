@@ -1,7 +1,6 @@
 body {
-  margin: 0;
-  padding: 20px;
-  background-color: gold;
+  padding-top: 20px;
+  background: #fbfbfb;
 }
 
 /************** header tag styles **************/
@@ -46,71 +45,83 @@ font-size: 1em;
  padding: 0px;
 }
 
-.nav{
-  border:1px solid #ccc;
-  border-width:1px 0;
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
+/* items */
+
+.grid-1 div {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  height: 500px;
+  }
+
+/* specific item styles */
+
+.item-1 {
+  background: #b03532;
+  height: 800px;
 }
-.nav li{
-    display:inline;
+.item-2 {
+  background: #33a8a5;
+  height: 800px;
 }
-.nav a{
-  display:inline-block;
-  padding:10px;
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  padding-top: 10px
-  letter-spacing: 2px;
-  font-family: arial, serif;
+.item-3 {
+  background: #30997a;
+  height: 800px;
+}
+.item-4 {
+  background: #6a478f;
+  height: 800px;
+}
+.item-5 {
+  background: #da6f2b;
+  height: 800px;
+}
+.item-6 {
+  background: #3d8bb1;
+  height: 800px;
+}
+.item-7 {
+  background: #e03f3f;
+  height: 800px;
+}
+.item-8 {
+  background: #59a627;
+  height: 800px;
+}
+.item-9 {
+  background: #4464a1;
+  height: 800px;
 }
 
 /************** quiz tag styles **************/
 
-.questionBox{
-  position: relative;
-  background-color: grey;
-  text-align: center;
-  width: 100vw;
-  height:500px;
-  margin: 1px;
-}
 
 .question-img{
-  position: absolute;
-  top: 5%;
-  left: 10%;
+  position: relative;
+  text-align: center;
+  top: 10%;
 }
 
-.quiz {
-  margin: 0 auto;
-}
 .quiz ul {
+  position: relative;
   list-style: none;
-  padding: 10px;
-  margin: 0;
+  margin: auto;
+  width: 50%;
+  top: 40%;
 }
+
 .quiz li{
-  display: inline-block;
-  border-radius: 10px;
-  width:  15%;
-  padding: 10px;
-  margin: 10px;
+border-radius: 10px;
 }
+
 .quiz-question {
   font: 100% Verdana,sans-serif;
   text-align: center;
   color: white;
   font-weight: bold;
   padding: 30px 0 10px 0;
-  margin: 0;
 }
+
 .quiz-answer {
   font: 100% Verdana,sans-serif;
   margin: 0;
@@ -119,9 +130,11 @@ font-size: 1em;
   margin-bottom: 5px;
   cursor: pointer;
 }
+
 .quiz-answer:hover {
   background: #eee;
 }
+
 .quiz-answer:before {
   content: "";
   display: inline-block;
@@ -133,6 +146,10 @@ font-size: 1em;
   vertical-align: middle;
   margin-right: 10px;
 }
+
+
+/************** quiz answer styles **************/
+
 .quiz-answer.active:before {
   background-color: #03A9F4;
   border-color: #03A9F4;
