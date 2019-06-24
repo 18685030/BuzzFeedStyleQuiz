@@ -84,7 +84,7 @@ var Quiz = function() {
       } else if (numberOfCorrectAnswers == 4) {
       return {
         code: 'mid',
-        text: 'You got 4 asnwers correct'
+        text: 'You got 4 answers correct'
       };
     } else if (numberOfCorrectAnswers == 5) {
       return {
