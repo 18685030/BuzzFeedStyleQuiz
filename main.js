@@ -113,6 +113,7 @@ var Quiz = function() {
     };
     }
   }
+  // Checks if all the 9 answers have been completed
   this._isComplete = function() {
     var answersComplete = 0;
     $('ul[data-quiz-question]').each(function() {
@@ -126,9 +127,11 @@ var Quiz = function() {
       return false;
     }
   }
+  // Shows the answer
   this._showResult = function(result) {
     $('.quiz-result').addClass(result.code).html(result.text);
   }
+
   this._bindEvents = function() {
     $('.quiz-answer').on('click', function() {
       var $this = $(this),
