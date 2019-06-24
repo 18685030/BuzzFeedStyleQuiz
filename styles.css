@@ -1,6 +1,6 @@
 body {
-  padding-top: 20px;
   background: #fbfbfb;
+  margin: 0;
 }
 
 /************** header tag styles **************/
@@ -25,40 +25,40 @@ h1{
 
 .item-1 {
   background: #b03532;
-  height: 1000px;
+  height: 100%;
 }
 
 .item-2 {
   background: #33a8a5;
-  height: 1000px;
+  height: 100%;
 }
 .item-3 {
   background: #30997a;
-  height: 1000px;
+  height: 100%;
 }
 .item-4 {
   background: #6a478f;
-  height: 1000px;
+  height: 100%;
 }
 .item-5 {
   background: #da6f2b;
-  height: 1000px;
+  height: 100%;
 }
 .item-6 {
   background: #3d8bb1;
-  height: 1000px;
+  height: 100%;
 }
 .item-7 {
   background: #e03f3f;
-  height: 1000px;
+  height: 100%;
 }
 .item-8 {
   background: #59a627;
-  height: 1000px;
+  height: 100%;
 }
 .item-9 {
   background: #4464a1;
-  height: 1000px;
+  height: 100%;
 }
 
 /************** quiz tag styles **************/
@@ -72,13 +72,13 @@ h1{
 .quiz ul {
   list-style: none;
   margin: auto;
-  width: 70%;
+  width: 50%;
   font-size: 1.5em;
 }
 
 .quiz li{
   border-radius: 10px;
-  height: 70px;
+  height: 50px;
   margin-top: 40px;
 }
 
@@ -104,8 +104,8 @@ h1{
   content: "";
   display: inline-block;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #ccc;
   background: #fff;
   vertical-align: middle;
