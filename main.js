@@ -61,27 +61,56 @@ var Quiz = function() {
         $this.find('.quiz-answer.active').addClass('incorrect');
       }
     });
-    if (numberOfCorrectAnswers < 3) {
+    if (numberOfCorrectAnswers == 0) {
       return {
         code: 'bad',
-        text: 'Less than 3 correct.'
+        text: 'you got 0 answers correct.'
       };
-    } else if (numberOfCorrectAnswers >= 3 && 
-               numberOfCorrectAnswers <= 5) {
+    } else if (numberOfCorrectAnswers == 1) {
       return {
-        code: 'good',
-        text: 'Between 3 and 5 correct!'
+        code: 'bad',
+        text: 'You got 2 answers correct!'
       };
-    } else if (numberOfCorrectAnswers >= 6 && numberOfCorrectAnswers <= 8) {
+      } else if (numberOfCorrectAnswers == 2) {
       return {
-        code: 'good',
-        text: 'Between 6 and 8 correct!'
+        code: 'bad',
+        text: 'You got 2 answers correct!'
       };
-        } else if (numberOfCorrectAnswers > 8) {
+    } else if (numberOfCorrectAnswers == 3) {
+      return {
+        code: 'bad',
+        text: 'You got 3 answers correct'
+      };
+      } else if (numberOfCorrectAnswers == 4) {
       return {
         code: 'mid',
-        text: 'Best student'
+        text: 'You got 4 asnwers correct'
       };
+    } else if (numberOfCorrectAnswers == 5) {
+      return {
+        code: 'mid',
+        text: 'You got 5 answers correct'
+      };
+      } else if (numberOfCorrectAnswers == 6) {
+      return {
+        code: 'mid',
+        text: 'You got 6 answers correct'
+      };
+      } else if (numberOfCorrectAnswers == 7) {
+      return {
+        code: 'good',
+        text: 'You got 7 answers correct'
+      };
+      } else if (numberOfCorrectAnswers == 8) {
+      return {
+        code: 'good',
+        text: 'You got 8 answers correct'
+      };
+      } else if (numberOfCorrectAnswers == 9) {
+      return {
+        code: 'good',
+        text: 'You got all answers correct'
+    };
     }
   }
   this._isComplete = function() {
@@ -106,6 +135,7 @@ var Quiz = function() {
         $answers = $this.closest('ul[data-quiz-question]');
       self._pickAnswer($this, $answers);
       if (self._isComplete()) {
+
 
         // scroll to answer section
         $('html, body').animate({
