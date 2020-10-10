@@ -1,5 +1,3 @@
-# BuzzFeedStyleQuiz
-
-https://18685030.github.io/BuzzFeedStyleQuiz/
+# Simple Quiz Layout 
 
 Credits to: https://codepen.io/johnpvi/pen/MyLKgd
